@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C8C7C7"
+    android:background="#E5F2D0"
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
