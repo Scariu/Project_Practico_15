@@ -10,7 +10,7 @@ import com.example.project_practico_15.databinding.ActivityMainBinding
 * 2.[x]layout con recyclerView
 * 3.[x]Asignar layout manager
 * 4.[]Adapter + ViewHolder
-* 5.[]Tener disponibles los datos
+* 5.[x]Tener disponibles los datos
 * */
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
