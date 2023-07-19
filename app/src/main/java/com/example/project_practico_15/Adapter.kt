@@ -23,14 +23,19 @@ val pokemones = mutableListOf<Pokemon>()
     }
 
     override fun onBindViewHolder(holder: Adapter.ViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        val item = pokemones[position]
+        holder.bind(item)
     }
 
     override fun getItemCount(): Int {
         return pokemones.size
 
     }
-    class ViewHolder(binding: ItemBinding): RecyclerView.ViewHolder(binding.root){
+    class ViewHolder(private val binding: ItemBinding): RecyclerView.ViewHolder(binding.root){
+        fun bind(pokemon: Pokemon) {
+            binding.textViewNombre.text = pokemon.nombre
+            binding.textViewElemento.text = pokemon.tipo
 
+        }
     }
 }
