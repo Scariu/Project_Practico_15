@@ -1,4 +1,4 @@
 package com.example.project_practico_15
 
-class Pokemon {
+class Pokemon(val nombre: String, tipo: String) {
 }

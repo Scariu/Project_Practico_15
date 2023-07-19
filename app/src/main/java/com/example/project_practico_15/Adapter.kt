@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 
  */
 class Adapter: RecyclerView.Adapter<Adapter.ViewHolder>() {
-
+val pokemones = mutableListOf<Pokemon>()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Adapter.ViewHolder {
         TODO("Not yet implemented")
     }
@@ -24,7 +24,8 @@ class Adapter: RecyclerView.Adapter<Adapter.ViewHolder>() {
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return pokemones.size
+
     }
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 
